@@ -19,9 +19,11 @@ app.use(cookieParser());
 //routes import
 import userRouter from "./routes/user.routes.js";
 import taskRouter from "./routes/task.routes.js";
+import healthcheckRouter from "./routes/healthcheck.routes.js";
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/tasks", taskRouter);
+app.use("/api/v1/healthcheck", healthcheckRouter);
 
 //routes declaration
 
